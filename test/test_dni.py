@@ -1,8 +1,8 @@
-from src.Dni import Dni
+from dni.Dni import Dni
 
 """CASES TEST DNI Objects
 """
 
-def test_dni():
+# def test_dni():
     
     
