@@ -17,7 +17,7 @@ def test_dni_letter():
 
 def test_check_lenght_dni():
     
-    assert Dni(41098501).check_lenght_dni() == True
-    assert Dni(4109850145).check_lenght_dni() == False
-    assert Dni(41098501).check_lenght_dni() == True
-    assert Dni(4109850).check_lenght_dni() == False
+    assert Dni(41098501).check_lenght_number() == True
+    assert Dni(4109850145).check_lenght_number() == False
+    assert Dni(41098501).check_lenght_number() == True
+    assert Dni(4109850).check_lenght_number() == False
