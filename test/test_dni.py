@@ -4,5 +4,4 @@ from src.Dni import Dni
 """
 
 def test_dni():
-    
-    
+    pass
