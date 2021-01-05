@@ -1,4 +1,4 @@
-from src.Dni import Dni
+from src.dni import Dni
 
 """CASES TEST DNI Objects
 """

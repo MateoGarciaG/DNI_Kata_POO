@@ -26,6 +26,4 @@ class Dni():
             return True
         else:
             return False
-        
-if __name__ == "__main__":
-    assert  Dni(41098501).get_letter() == 'P'
+
