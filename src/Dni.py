@@ -1,4 +1,7 @@
-from src.table_letters import Table_letters
+from table_letters import Table_letters
+
+#* Para que funcione pytest
+#* from table_letters import Table_letters
 class Dni():
     
     def __init__(self, number):
