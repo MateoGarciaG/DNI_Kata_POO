@@ -1,10 +1,10 @@
-from dni.Dni import Dni
+from src.Dni import Dni
 
 """CASES TEST DNI Objects
 """
 
 def test_get_letter():
-    assert  Dni(41098501).get_letter() == 'p'
+    assert  Dni(41098501).get_letter() == 'P'
     assert  Dni(34800381).get_letter() == 'R'
     assert  Dni(54293833).get_letter() == 'X'
     assert  Dni(60338893).get_letter() == 'A'

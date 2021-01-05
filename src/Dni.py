@@ -1,4 +1,4 @@
-from dni.Table_letters import Table_letters
+from src.table_letters import Table_letters
 class Dni():
     
     def __init__(self, number):
@@ -8,7 +8,7 @@ class Dni():
         
         if self.check_lenght_number() == True:
             position = self.number % len(Table_letters.keys)
-            letter = Table_letters.table[position]
+            letter = Table_letters.table.get(position)
             return letter
         else:
             return self.check_lenght_number()
@@ -22,7 +22,10 @@ class Dni():
     
     def check_lenght_number(self):
         
-        if len(self.number) == Table_letters.lenght_number_dni:
+        if len(str(self.number)) == Table_letters.lenght_number_dni:
             return True
         else:
             return False
+        
+if __name__ == "__main__":
+    assert  Dni(41098501).get_letter() == 'P'
