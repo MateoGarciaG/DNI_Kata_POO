@@ -3,21 +3,21 @@ from src.Dni import Dni
 """CASES TEST DNI Objects
 """
 
-def test_get_letter():
-    assert  Dni(41098501).get_letter() == 'P'
-    assert  Dni(34800381).get_letter() == 'R'
-    assert  Dni(54293833).get_letter() == 'X'
-    assert  Dni(60338893).get_letter() == 'A'
+def test_getLetter():
+    assert  Dni(41098501).getLetter() == 'P'
+    assert  Dni(34800381).getLetter() == 'R'
+    assert  Dni(54293833).getLetter() == 'X'
+    assert  Dni(60338893).getLetter() == 'A'
 
-def test_dni_letter():
-    assert Dni(41098501).get_new_dni() == '41098501P'
-    assert Dni(34800381).get_new_dni() == '34800381R'
-    assert Dni(54293833).get_new_dni() == '54293833X'
-    assert Dni(60338893).get_new_dni() == '60338893A'
+def test_dniLetter():
+    assert Dni(41098501).getNewDni() == '41098501P'
+    assert Dni(34800381).getNewDni() == '34800381R'
+    assert Dni(54293833).getNewDni() == '54293833X'
+    assert Dni(60338893).getNewDni() == '60338893A'
 
-def test_check_lenght_dni():
+def test_checkLenghtNumber():
     
-    assert Dni(41098501).check_lenght_number() == True
-    assert Dni(4109850145).check_lenght_number() == False
-    assert Dni(41098501).check_lenght_number() == True
-    assert Dni(4109850).check_lenght_number() == False
+    assert Dni(41098501).checkLenghtNumber() == True
+    assert Dni(4109850145).checkLenghtNumber() == False
+    assert Dni(41098501).checkLenghtNumber() == True
+    assert Dni(4109850).checkLenghtNumber() == False
